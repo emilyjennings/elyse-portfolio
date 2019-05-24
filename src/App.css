@@ -2,6 +2,11 @@
   font-family: Arial;
 }
 
+body {
+  background-image: url("./components/img/nepal.jpg");
+  background-size: cover
+}
+
 .navtitle {
   text-align: center;
   color: black;

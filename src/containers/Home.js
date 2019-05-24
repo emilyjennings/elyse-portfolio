@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-import Tiles from '../components/Tiles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Header from '../components/Header'
 
 
 export default class Home extends Component {
 
   changeHeader = () => {
-    $('.navtitle').text("Hi, I'm Emily")
+    $('.navtitle').text("Elyse")
     $('.navsubtitle, a#e, a#a, a#g').hide()
     $('.navsubtitlestick').text("This is me")
     $('.navlinks').show()
@@ -16,12 +16,8 @@ export default class Home extends Component {
 
   backgroundChange = () => {
     $("body").css({
-      'background-color': '#262c2d',
-      'background-image':
-        `radial-gradient(#35CDD1 3%, transparent 0),
-        radial-gradient(#35CDD1 3%, transparent 0)`,
-      'background-size': '30px 30px',
-      'background-position': '0 0, 15px 15px'
+
+
     });
   }
 
@@ -100,11 +96,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home">
-        <div className="homecaptionlast"><span id="okay">It's okay if you don't like my fonts.</span><span id="me"> This is me.</span></div>
-
-        < Tiles />
-
-        <div className="scrolldown">< FontAwesomeIcon icon={'angle-double-down'} /></div>
+        <Header />
       </div>
     );
   };

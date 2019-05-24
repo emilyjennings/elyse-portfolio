@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import './App.css';
 
-import Header from './components/Header'
+import Home from './containers/Home'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="app">
-          <Header />
+          <Home />
 
         </div>
       </BrowserRouter>
