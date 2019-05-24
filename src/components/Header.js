@@ -1,25 +1,11 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
+import Nav from './Nav.js'
+
 
 export default class Header extends Component {
 
-  scrollFade = () => {
-    $(window).scroll(function(){
-      $(".navbar, hr").css("opacity", 1 - $(window).scrollTop() / 150);
-      if ($(window).scrollTop() > 400) {
-        $(".navbar, hr").css("display", "none");
-      } else if ($(window).scrollTop() < 400) {
-        $(".navbar, hr").css("display", "block");      }
-    });
-  }
-
-  navStick = () => {
-    $(window).scroll(function(){
-      $(".navstick, .hamburger").css("opacity", 0 + $(window).scrollTop() / 250)
-      $(".navstick").css("width", $(window).scrollTop() * 4)
-    });
-  }
 
   hamMenu = () => {
     //hides the hamburger menu at first until clicked
@@ -44,14 +30,13 @@ export default class Header extends Component {
   }
 
   componentDidMount(){
-    {this.navStick()}
-    {this.scrollFade()}
     {this.hamMenu()}
   }
 
   render() {
     return (
         <div className="headercontainer">
+          <Nav />
 
           <div className="navbar">
             <div className="navtitle">Elyse Jennings</div>

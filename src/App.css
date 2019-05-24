@@ -3,13 +3,169 @@
 }
 
 body {
-  background-image: url("./components/img/nepal.jpg");
-  background-size: cover
+  background: black
+
 }
+
+/* Header */
 
 .navtitle {
   text-align: center;
   color: black;
-  margin-top: 100px;
-  font-size: 4em
+  margin: 100px 50px;
+  font-size: 5em;
+  background-image: url("./components/img/nepal.jpg");
+  background-size: cover;
+  font-family: 'Ranga', serif;
+  height: 500px
+}
+
+button.hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 5px 5px 5px 5px;
+  margin: 20px;
+  border: 1px solid green;
+  line-height: 2.5em;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 1px 13px;
+  color: green;
+  z-index: 100;
+  background: black;
+
+}
+
+button.hamburger:hover {
+  background: #C4EFDA
+}
+
+.top {
+  padding: 10px;
+  display: block;
+  margin: 30px auto;
+  font-size: 1em;
+  opacity: 0;
+  font-weight: bold;
+  border: 3px solid #35CDD1;
+  color: #35CDD1;
+  border-radius: 80px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 100;
+  background: #C4EFDA;
+}
+
+.top:hover, .skill-button:hover {
+  background-color: #35CDD1;
+  color: #C4EFDA;
+  opacity: .5;
+}
+
+.top:visited {
+  color: #35CDD1
+}
+
+.mobile-navlinks {
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 5px 5px 5px 5px;
+  margin: 1px 10px;
+  border: 1px solid #35CDD1;
+  line-height: 2.4em;
+  padding: 1px;
+  opacity: 1;
+  z-index: 100;
+  color: #2ec4f2;
+  background: #C4EFDA;
+}
+
+.mobile-navlinks a, .mobile-navlinks a:visited {
+  display: inline-block;
+  color: #262c2d;
+  text-align: center;
+  background: none;
+  padding: 0 20px;
+  margin: 0;
+  font-size: 15px
+}
+
+.mobile-navlinks a:hover {
+  background: none;
+  color: #35CDD1;
+}
+
+
+.skill-button {
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  margin-top: 200px
+}
+
+.top:hover, .skill-button:hover {
+  background-color: #35CDD1;
+  color: #C4EFDA;
+  opacity: .5;
+}
+
+.top:visited {
+  color: #35CDD1
+}
+
+div.top {
+  display: none
+}
+
+
+/* Footer */
+
+.emily {
+  position: fixed;
+  bottom: 15px;
+  width: 30%;
+  margin: 0 35%;
+  text-align: center;
+  z-index: 50;
+  font-family: 'Pacifico', cursive;
+  color: #35CDD1;
+  font-size: 12px;
+}
+
+.emily a:visited {
+  color: #35CDD1
+}
+
+.emily a:hover, .emily a {
+  color: #C4EFDA
+}
+
+.socialmedia {
+  width: 100%;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  z-index: 50
+}
+
+.socialmedia a {
+  padding: 10px;
+  font-size: 30px;
+  color: #35CDD1;
+}
+
+.socialmedia i:hover {
+  color: #C4EFDA
+}
+
+i {
+  color: #35CDD1;
 }
