@@ -1,3 +1,8 @@
+# This is a site for my sister to showcase her skills
+
+My sister wanted a portfolio to serve as an online CV. She's in academia. She's a sociologist. So I wanted this to be the best sociologist portfolio on the web, which apparently isn't that hard to be. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
