@@ -8,9 +8,9 @@ import Home from './containers/Home'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faGlobeAsia } from '@fortawesome/free-solid-svg-icons'
+import { faGlobeAsia, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faLinkedin)
+library.add(faLinkedin, faTimes)
 
 class App extends Component {
 

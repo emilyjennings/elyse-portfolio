@@ -20,26 +20,6 @@ body {
   font-weight: bold
 }
 
-/* button.hamburger {
-  position: fixed;
-  top: 0;
-  right: 0;
-  border-radius: 5px 5px 5px 5px;
-  margin: 20px;
-  border: 1px solid white;
-  line-height: 2.5em;
-  font-family: monospace;
-  font-size: 20px;
-  padding: 1px 13px;
-  color: white;
-  z-index: 100;
-  background: black;
-}
-
-button.hamburger:hover {
-  background: #C4EFDA
-} */
-
 .top {
   padding: 10px;
   display: block;
@@ -63,7 +43,7 @@ button.hamburger:hover {
   opacity: .5;
 }
 
- .mobile-navlinks {
+ .navlinks {
   display: inline-block;
   overflow: hidden;
   position: fixed;
@@ -78,7 +58,7 @@ button.hamburger:hover {
   width: 100%
 }
 
-.mobile-navlinks a, .mobile-navlinks a:visited {
+.navlinks a, .navlinks a:visited {
   display: inline-block;
   color: #262c2d;
   text-align: center;
@@ -90,9 +70,13 @@ button.hamburger:hover {
   font-weight: bold
 }
 
-.mobile-navlinks a:hover {
+.navlinks a:hover {
   background: none;
   color: #35CDD1;
+}
+
+.mobile-navlinks, .hamburger {
+  display: none
 }
 
 .top:visited {
@@ -119,4 +103,64 @@ button.hamburger:hover {
 
 i {
   color: #35CDD1;
+}
+
+@media only screen and (max-width: 500px) {
+  .navtitle {
+    padding: 20px;
+    font-size: 40px
+  }
+
+  .navlinks {
+    display: none
+  }
+
+  .mobile-navlinks {
+    display: block;
+    border: 3px solid white;
+  }
+
+  .mobile-navlinks a, .mobile-navlinks a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-weight: bold;
+    font-size: 25px
+  }
+
+  button.hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 5px 5px 5px 5px;
+    margin: 20px;
+    border: 1px solid black;
+    line-height: 2.5em;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 1px 13px;
+    display: block;
+    color: black;
+    z-index: 100;
+    background: white;
+  }
+
+  button.hamburger:hover {
+    background: black;
+    color: white
+  }
+
+  .cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px
+  }
+
+  i {
+    color: white
+  }
+
 }
