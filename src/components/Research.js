@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-class Bio extends Component {
+class Research extends Component {
 
   changeHeader = () => {
     $('.navtitle').text("About Me")
-    $('.biolink').css({
+    $('.researchlink').css({
       'background': 'black',
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.home, .researchlink, .contactlink').css({
+    $('.home, .biolink, .contactlink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'
@@ -31,4 +31,4 @@ class Bio extends Component {
 
 }
 
-export default Bio
+export default Research

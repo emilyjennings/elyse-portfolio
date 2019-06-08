@@ -4,6 +4,10 @@ import { BrowserRouter, Route } from "react-router-dom";
 import './App.css';
 
 import Home from './containers/Home'
+import Bio from './components/Bio'
+import Contact from './components/Contact'
+import Gallery from './components/Gallery'
+import Research from './components/Research'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,6 +24,12 @@ class App extends Component {
       <BrowserRouter>
         <div className="app">
           <Home />
+
+          <Route exact path="/" component={Home} />
+          <Route exact path="/bio" component={Bio} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/research" component={Research} />
+          <Route exact path="/gallery" component={Gallery} />
 
         </div>
       </BrowserRouter>

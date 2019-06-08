@@ -17,7 +17,7 @@ export default class Header extends Component {
       });
     });
 
-    //on click, the menu displays
+    //exes out of the menu
     $(".cross").click(function(event){
       event.preventDefault();
       if ($(".cross").is(":visible")){
