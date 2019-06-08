@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Header from '../components/Header'
+import Header from './Header'
 
 
 export default class Home extends Component {
 
-  changeHeader = () => {
-    $('.navtitle').text("Elyse Jennings")
-  }
+changeHeader = () => {
+  $('.navtitle').text("Elyse Jennings")
+  $('.home').css({
+    'background': 'black',
+    'color': 'white',
+    'padding': '0 3px'
+  })
+}
 
 
 scrollTop = () => {
@@ -27,23 +32,24 @@ scrollTop = () => {
   });
 }
 
+componentDidMount(){
+  {this.changeHeader()}
+  {this.scrollTop()}
+}
 
-  componentDidMount(){
-    {this.changeHeader()}
-    {this.scrollTop()}
-  }
+render() {
+  return (
+    <div className="home">
+      <Header />
+      <div className="navtitle">Elyse Jennings</div>
 
-  render() {
-    return (
-      <div className="home">
-        <Header />
-        <button className="top">
-          Up
-        </button>
+      <button className="top">
+        Up
+      </button>
 
-      </div>
-    );
-  };
+    </div>
+  );
+};
 
 
 }
