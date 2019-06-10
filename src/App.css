@@ -16,7 +16,7 @@ body {
   font-size: 5em;
   background-color: white;
   font-family: 'Slabo 27px', serif;
-  height: 500px;
+  height: 100px;
   font-weight: bold
 }
 
@@ -105,7 +105,7 @@ i {
   color: #35CDD1;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .navtitle {
     padding: 20px;
     font-size: 40px
@@ -121,7 +121,7 @@ i {
   }
 
   .mobile-navlinks a, .mobile-navlinks a:visited {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 5px;
     text-align: center;

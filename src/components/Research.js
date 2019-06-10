@@ -10,7 +10,7 @@ class Research extends Component {
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.home, .biolink, .contactlink').css({
+    $('.home, .biolink, .contactlink, .gallerylink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'
@@ -20,7 +20,7 @@ class Research extends Component {
 
   render() {
     return (
-      <div className="projectshowborder">
+      <div className="researchpage">
       </div>
     );
   };

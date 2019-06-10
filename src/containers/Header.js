@@ -38,6 +38,7 @@ export default class Header extends Component {
     return (
         <div className="headercontainer">
           <Nav />
+          <div className="navtitle"></div>
 
         </div>
     );

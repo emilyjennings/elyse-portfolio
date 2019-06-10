@@ -5,12 +5,12 @@ class Gallery extends Component {
 
   changeHeader = () => {
     $('.navtitle').text("Photos")
-    $('.biolink').css({
+    $('.gallerylink').css({
       'background': 'black',
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.home, .research, .contact').css({
+    $('.home, .research, .contact, biolink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'
@@ -20,7 +20,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="projectshowborder">
+      <div className="gallerypage">
       </div>
     );
   };

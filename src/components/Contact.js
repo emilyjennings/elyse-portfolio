@@ -23,7 +23,7 @@ export default class Contact extends Component {
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.home, .researchlink, .biolink').css({
+    $('.home, .researchlink, .biolink, .gallerylink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'

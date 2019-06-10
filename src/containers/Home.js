@@ -41,7 +41,6 @@ render() {
   return (
     <div className="home">
       <Header />
-      <div className="navtitle">Elyse Jennings</div>
 
       <button className="top">
         Up

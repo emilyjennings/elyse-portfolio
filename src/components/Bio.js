@@ -10,7 +10,7 @@ class Bio extends Component {
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.home, .researchlink, .contactlink').css({
+    $('.home, .researchlink, .contactlink, .gallerylink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'
@@ -20,7 +20,7 @@ class Bio extends Component {
 
   render() {
     return (
-      <div className="projectshowborder">
+      <div className="biopage">
       </div>
     );
   };
