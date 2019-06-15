@@ -185,7 +185,8 @@ form {
 
   .mobile-navlinks {
     display: block;
-    border: 3px solid white;
+    border: 3px solid black;
+    background: white
   }
 
   .mobile-navlinks a, .mobile-navlinks a:visited {
@@ -195,7 +196,7 @@ form {
     text-align: center;
     font-family: 'Slabo 27px', serif;
     font-weight: bold;
-    font-size: 25px
+    font-size: 25px;
   }
 
   button.hamburger {
@@ -229,6 +230,11 @@ form {
 
   i {
     color: white
+  }
+
+  .gallerylink, .homelink, .biolink, .contactlink, .researchlink {
+    color: black;
+    background: white
   }
 
 }

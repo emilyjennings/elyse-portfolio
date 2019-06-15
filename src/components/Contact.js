@@ -79,8 +79,6 @@ export default class Contact extends Component {
 
           </form>
         </div>
-
-        <div className="space"></div>
       </div>
     );
   };

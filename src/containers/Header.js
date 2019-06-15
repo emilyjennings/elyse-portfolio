@@ -10,6 +10,7 @@ export default class Header extends Component {
     //hides the hamburger menu at first until clicked
     $(".mobile-navlinks").hide();
     $(".hamburger").click(function(){
+      $(window).scrollTop(0);
       $(".mobile-navlinks").slideToggle("slow", function(){
         $(".hamburger").fadeOut();
         $(".mobile-navlinks").show();
