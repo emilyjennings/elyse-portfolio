@@ -4,7 +4,7 @@ import $ from 'jquery'
 class Research extends Component {
 
   changeHeader = () => {
-    $('.navtitle').text("About Me")
+    $('.navtitle').text("Research")
     $('.researchlink').css({
       'background': 'black',
       'color': 'white',

@@ -27,14 +27,14 @@ body {
   font-size: 1em;
   opacity: 0;
   font-weight: bold;
-  border: 3px solid #35CDD1;
-  color: #35CDD1;
+  border: 3px solid white;
+  color: white;
   border-radius: 80px;
   position: fixed;
   bottom: 40px;
   right: 20px;
   z-index: 100;
-  background: #C4EFDA;
+  background: black;
 }
 
 .top:hover {
@@ -104,6 +104,74 @@ body {
 i {
   color: #35CDD1;
 }
+
+/* contact page */
+
+.contactcontainer {
+  text-align: center;
+  width: 50%;
+  z-index: 1;
+  margin: 280px auto 100px auto;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Bitter', serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  background: black;
+}
+
+.formcaption {
+  display: inline-block;
+  margin: 10px auto;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+label {
+  font-size: 0.8em;
+}
+
+input {
+  background: white;
+  border: none;
+}
+
+textarea {
+  display: block;
+  width: 80%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto 10px auto;
+  background: white;
+  color: black;
+  font-size: 1.1em
+}
+
+.input-row-2 {
+  margin-top: 15px
+}
+
+button#submit {
+  font-size: 23px;
+  font-family: 'Monoton', serif;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto
+}
+
+button#submit:hover {
+  color: #2ec4f2
+}
+
+form {
+  z-index: 5
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
   .navtitle {

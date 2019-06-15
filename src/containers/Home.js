@@ -9,7 +9,7 @@ export default class Home extends Component {
 
 changeHeader = () => {
   $('.navtitle').text("Elyse Jennings")
-  $('.home').css({
+  $('.homelink').css({
     'background': 'black',
     'color': 'white',
     'padding': '0 3px'
@@ -24,7 +24,7 @@ scrollTop = () => {
 
   $(window).scroll(function(){
     var scrollTop = $(window).scrollTop()
-    if (scrollTop > 180) {
+    if (scrollTop > 80) {
       $('.top').animate({
         opacity: '1',
       }, 1000)
@@ -40,7 +40,6 @@ componentDidMount(){
 render() {
   return (
     <div className="home">
-      <Header />
 
       <button className="top">
         Up

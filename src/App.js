@@ -29,24 +29,8 @@ class App extends Component {
   }
 
 
-  scrollTop = () => {
-    $(".top").click(function(event){
-      $(window).scrollTop(0);
-    });
-
-    $(window).scroll(function(){
-      var scrollTop = $(window).scrollTop()
-      if (scrollTop > 180) {
-        $('.top').animate({
-          opacity: '1',
-        }, 1000)
-      };
-    });
-  }
-
   componentDidMount(){
     {this.changeHeader()}
-    {this.scrollTop()}
   }
 
 
@@ -55,20 +39,14 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="app">
+         <Header />
 
           <Route exact path="/" component={Home} />
           <Route exact path="/bio" component={Bio} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/research" component={Research} />
           <Route exact path="/gallery" component={Gallery} />
-          <div className="home">
-            <Header />
 
-            <button className="top">
-              Up
-            </button>
-
-          </div>
 
         </div>
       </BrowserRouter>
