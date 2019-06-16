@@ -21,6 +21,7 @@ class Bio extends Component {
   render() {
     return (
       <div className="biopage">
+        <div className="profile-img"></div>
       </div>
     );
   };
