@@ -11,11 +11,11 @@ changeHeader = () => {
   $('.navtitle').text("Elyse Jennings")
   $('.homelink').css({
     'background': 'black',
-    'color': 'white',
-    'padding': '0 3px'
+    'color': '#8ac8e2',
+    'padding': '0 5px'
   })
   $('.researchlink, .biolink, .contactlink, .gallerylink').css({
-    'background': 'white',
+    'background': 'none',
     'color': 'black',
     'padding': '0'
   })

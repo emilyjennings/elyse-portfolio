@@ -58,7 +58,8 @@ body {
   z-index: 100;
   color: black;
   background: white;
-  width: 100%
+  width: 100%;
+  background-image: linear-gradient(#e8f2ed, #8ac8e2)
 }
 
 .navlinks a, .navlinks a:visited {
