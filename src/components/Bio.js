@@ -10,7 +10,7 @@ class Bio extends Component {
       'color': '#8ac8e2',
       'padding': '0 5px'
     })
-    $('.home, .researchlink, .contactlink, .gallerylink').css({
+    $('.homelink, .researchlink, .contactlink, .gallerylink').css({
       'background': 'none',
       'color': 'black',
       'padding': '0'
