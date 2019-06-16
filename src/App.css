@@ -57,7 +57,6 @@ body {
   opacity: 1;
   z-index: 100;
   color: black;
-  background: white;
   width: 100%;
   background-image: linear-gradient(#e8f2ed, #8ac8e2)
 }
@@ -80,7 +79,9 @@ body {
 }
 
 .mobile-navlinks, .hamburger {
-  display: none
+  display: none;
+  background-image: linear-gradient(#e8f2ed, #8ac8e2)
+
 }
 
 .top:visited {
@@ -115,7 +116,7 @@ i {
   text-align: center;
   width: 50%;
   z-index: 1;
-  margin: 280px auto 100px auto;
+  margin: 150px auto 100px auto;
   border-radius: 20px;
   padding: 20px;
   font-family: 'Bitter', serif;
