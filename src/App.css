@@ -176,7 +176,9 @@ form {
 @media only screen and (max-width: 600px) {
   .navtitle {
     padding: 20px;
-    font-size: 40px
+    font-size: 40px;
+    min-height: 200px;
+    background-image: repeating-linear-gradient(180deg, #ccc, #ccc 30px, #dbdbdb 10px, #dbdbdb 10px);
   }
 
   .navlinks {

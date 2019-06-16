@@ -10,7 +10,7 @@ class Gallery extends Component {
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.homelink, .researchlink, .contactlink, biolink').css({
+    $('.homelink, .researchlink, .contactlink, .biolink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'
