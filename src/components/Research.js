@@ -10,7 +10,7 @@ class Research extends Component {
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.home, .biolink, .contactlink, .gallerylink').css({
+    $('.homelink, .biolink, .contactlink, .gallerylink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'

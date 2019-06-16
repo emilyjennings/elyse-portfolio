@@ -14,6 +14,11 @@ changeHeader = () => {
     'color': 'white',
     'padding': '0 3px'
   })
+  $('.researchlink, .biolink, .contactlink, .gallerylink').css({
+    'background': 'white',
+    'color': 'black',
+    'padding': '0'
+  })
 }
 
 
