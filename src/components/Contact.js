@@ -23,7 +23,7 @@ export default class Contact extends Component {
       'color': 'white',
       'padding': '0 3px'
     })
-    $('.home, .researchlink, .biolink, .gallerylink').css({
+    $('.homelink, .researchlink, .biolink, .gallerylink').css({
       'background': 'white',
       'color': 'black',
       'padding': '0'
@@ -41,7 +41,7 @@ export default class Contact extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert("Email Sent!"))
+      .then(() => alert("Success!"))
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -55,9 +55,8 @@ export default class Contact extends Component {
     return (
       <div className="contactpage">
         <div className="contactcontainer">
-          <div className="formcaption">Send me a message!</div>
-          <form name="contact" onSubmit={this.handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
+          <div className="formcaption">I'll be in touch soon.</div>
+          <form onSubmit={this.handleSubmit}>
             <div className="input-row-1">
                 <label>
                   Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
@@ -80,6 +79,8 @@ export default class Contact extends Component {
 
           </form>
         </div>
+
+        <div className="space"></div>
       </div>
     );
   };
