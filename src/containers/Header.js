@@ -5,6 +5,21 @@ import Nav from '../components/Nav'
 
 
 export default class Header extends Component {
+  scrollTop = () => {
+    $(".top").click(function(event){
+      $(window).scrollTop(0);
+    });
+
+    $(window).scroll(function(){
+      var scrollTop = $(window).scrollTop()
+      if (scrollTop > 80) {
+        $('.top').animate({
+          opacity: '1',
+        }, 1000)
+      };
+    });
+  }
+
 
   hamMenu = () => {
     //hides the hamburger menu at first until clicked
