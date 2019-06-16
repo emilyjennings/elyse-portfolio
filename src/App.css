@@ -202,7 +202,6 @@ form {
   .mobile-navlinks {
     display: block;
     border: 3px solid black;
-    background: white
   }
 
   .mobile-navlinks a, .mobile-navlinks a:visited {
