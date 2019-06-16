@@ -17,7 +17,10 @@ body {
   background-color: white;
   font-family: 'Slabo 27px', serif;
   height: 100px;
-  font-weight: bold
+  font-weight: bold;
+  background-image: linear-gradient(rgba(28, 95, 94, 0.1), rgba(28, 95, 94, 0.9)), url("../src/components/img/attachments/Lumbini 26.jpg");
+  background-position: top;
+  background-size: cover;
 }
 
 .top {
@@ -177,8 +180,6 @@ form {
   .navtitle {
     padding: 20px;
     font-size: 40px;
-    min-height: 200px;
-    background-image: repeating-linear-gradient(180deg, #ccc, #ccc 30px, #dbdbdb 10px, #dbdbdb 10px);
   }
 
   .navlinks {
