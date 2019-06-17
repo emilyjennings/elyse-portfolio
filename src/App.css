@@ -181,9 +181,20 @@ form {
   height: 300px;
   width: 400px;
   margin: 0 auto;
-  background-image: url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
+  background-image: linear-gradient(rgba(28, 95, 94, 0.15), rgba(28, 95, 94, 0.6)), url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
   background-position: center;
   background-size: cover;
+  border-radius: 5px
+}
+
+/* Pubs page */
+
+.cardborder {
+  background-image: linear-gradient(#e8f2ed, #8ac8e2);
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px 20%;
   border-radius: 5px
 }
 
@@ -228,28 +239,25 @@ form {
     display: block;
     color: black;
     z-index: 100;
-    background: white;
+    background-image: linear-gradient(#e8f2ed, #8ac8e2)
   }
 
   button.hamburger:hover {
     background: black;
-    color: white
+    color: #e8f2ed
   }
 
   .cross {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px
-  }
-
-  i {
-    color: white
+    margin: 20px;
   }
 
   .gallerylink, .homelink, .biolink, .contactlink, .researchlink {
     color: black;
-    background: white
+    background: #e8f2ed;
+    margin: 0 50px
   }
 
 }

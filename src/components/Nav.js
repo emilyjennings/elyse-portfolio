@@ -26,7 +26,7 @@ export default class NavBar extends Component {
       <div>
         <div className="navlinks">
           <Link to="/bio" onClick={() => this.scrollTop()}><div className="biolink">Bio</div></Link>
-          <Link to="/research" onClick={() => this.scrollTop()}><div className="researchlink">Research</div></Link>
+          <Link to="/research" onClick={() => this.scrollTop()}><div className="researchlink">Publications</div></Link>
           <Link to="/contact" onClick={() => this.scrollTop()}><div className="contactlink">Contact</div></Link>
           <Link to="/gallery" onClick={() => this.scrollTop()}><div className="gallerylink">Gallery</div></Link>
           <Link to="/" onClick={() => this.scrollTop()}><div className="homelink">Home</div></Link>
@@ -35,7 +35,7 @@ export default class NavBar extends Component {
         <button className="hamburger">&#9776;</button>
         <div className="mobile-navlinks">
           <Link to="/bio" onClick={() => this.scrollTop()}><div className="biolink">Bio</div></Link>
-          <Link to="/research" onClick={() => this.scrollTop()}><div className="researchlink">Research</div></Link>
+          <Link to="/research" onClick={() => this.scrollTop()}><div className="researchlink">Publications</div></Link>
           <Link to="/contact" onClick={() => this.scrollTop()}><div className="contactlink">Contact</div></Link>
           <Link to="/gallery" onClick={() => this.scrollTop()}><div className="gallerylink">Gallery</div></Link>
           <Link to="/" onClick={() => this.scrollTop()}><div className="homelink">Home</div></Link>
