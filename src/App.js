@@ -8,7 +8,6 @@ import Home from './containers/Home'
 import Header from './containers/Header'
 import Bio from './components/Bio'
 import Contact from './components/Contact'
-import Gallery from './components/Gallery'
 import Research from './components/Research'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -45,7 +44,6 @@ class App extends Component {
           <Route exact path="/bio" component={Bio} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/research" component={Research} />
-          <Route exact path="/gallery" component={Gallery} />
 
 
         </div>

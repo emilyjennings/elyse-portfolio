@@ -3,8 +3,8 @@
 }
 
 body {
-  background: black
-
+  background: black;
+  font-family: 'Slabo 27px', serif;
 }
 
 /* Header */
@@ -110,6 +110,18 @@ i {
   color: #35CDD1;
 }
 
+/* Home */
+
+.home_content {
+  background-image: linear-gradient(#e8f2ed, #8ac8e2);
+  color: black;
+  width: 80%;
+  margin: 8%;
+  text-align: center;
+  font-size: 25px;
+  padding: 2%
+}
+
 /* contact page */
 
 .contactcontainer {
@@ -119,7 +131,7 @@ i {
   margin: 150px auto 100px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Bitter', serif;
+  font-family: 'Slabo 27', serif;
   font-size: 1.4em;
   font-weight: bold;
   color: white;
@@ -178,13 +190,23 @@ form {
 /*bio page */
 
 .profile-img {
-  height: 300px;
+  height: 450px;
   width: 400px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(28, 95, 94, 0.15), rgba(28, 95, 94, 0.6)), url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 5px
+}
+
+.bio_content {
+  background-image: linear-gradient(#e8f2ed, #8ac8e2);
+  color: black;
+  width: 80%;
+  margin: 5%;
+  text-align: center;
+  font-size: 25px;
+  padding: 5%
 }
 
 /* Pubs page */

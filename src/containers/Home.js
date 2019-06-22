@@ -46,6 +46,10 @@ render() {
   return (
     <div className="home">
 
+      <div className="home_content">
+        Put a welcome message here with a short intro to this site
+      </div>
+
       <button className="top">
         Up
       </button>

@@ -22,6 +22,9 @@ class Bio extends Component {
     return (
       <div className="biopage">
         <div className="profile-img"></div>
+        <div className="bio_content">
+        Elyse Jennings is a Research Scientist at the Center for Population and Development Studies, Harvard T.H. Chan School of Public Health.
+        </div>
       </div>
     );
   };
