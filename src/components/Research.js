@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
+import Fade from 'react-reveal/Fade';
+
+
 class Research extends Component {
 
   constructor(props) {
@@ -69,9 +72,11 @@ class Research extends Component {
 
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
-      <div className="cardborder" id={card.name}>
-        <div className="title">{card.title}</div>
-      </div>
+      <Fade left>
+        <div className="cardborder" id={card.name}>
+          <div className="title">{card.title}</div>
+        </div>
+      </Fade>
     )
   }
 

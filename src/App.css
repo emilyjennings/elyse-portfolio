@@ -126,22 +126,22 @@ i {
 
 .contactcontainer {
   text-align: center;
+  color: #35CDD1;
   width: 50%;
   z-index: 1;
-  margin: 150px auto 100px auto;
+  margin: 90px auto 100px auto;
   border-radius: 20px;
   padding: 20px;
   font-family: 'Slabo 27', serif;
   font-size: 1.4em;
   font-weight: bold;
-  color: white;
   background: black;
 }
 
 .formcaption {
   display: inline-block;
   margin: 10px auto;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
@@ -187,13 +187,23 @@ form {
   z-index: 5
 }
 
-/*bio page */
+/* Bio page */
 
 .profile-img {
-  height: 450px;
-  width: 400px;
+  height: 600px;
+  width: 500px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(28, 95, 94, 0.15), rgba(28, 95, 94, 0.6)), url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px
+}
+
+.nepal-img {
+  height: 600px;
+  width: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(28, 95, 94, 0.15), rgba(28, 95, 94, 0.6)), url("../src/components/img/attachments/Nepal 2009 504.JPG");
   background-position: center;
   background-size: cover;
   border-radius: 5px
@@ -280,6 +290,11 @@ form {
     color: black;
     background: #e8f2ed;
     margin: 0 50px
+  }
+
+  .profile-img, .nepal-img {
+    width: 300px;
+    height: 330px
   }
 
 }
