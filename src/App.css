@@ -1,9 +1,9 @@
 . {
-  font-family: Arial;
+  font-family: 'Slabo 27px', serif;
 }
 
 body {
-  background: black;
+  background: #f7f7f0;
   font-family: 'Slabo 27px', serif;
 }
 
@@ -11,16 +11,14 @@ body {
 
 .navtitle {
   text-align: center;
-  color: black;
-  margin: 100px 50px;
-  font-size: 5em;
-  background-color: white;
+  color: #008274;
+  margin: 100px 14%;
+  font-size: 4.7em;
   font-family: 'Slabo 27px', serif;
   height: 100px;
   font-weight: bold;
-  background-image: linear-gradient(rgba(28, 95, 94, 0.1), rgba(28, 95, 94, 0.9)), url("../src/components/img/attachments/Lumbini 26.jpg");
-  background-position: top;
-  background-size: cover;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #008274
 }
 
 .top {
@@ -30,14 +28,13 @@ body {
   font-size: 1em;
   opacity: 0;
   font-weight: bold;
-  border: 3px solid white;
-  color: white;
+  color: #f7f7f0;
   border-radius: 80px;
   position: fixed;
   bottom: 40px;
   right: 20px;
   z-index: 100;
-  background: black;
+  background: #008274;
 }
 
 .top:hover {
@@ -56,14 +53,13 @@ body {
   padding: 1px;
   opacity: 1;
   z-index: 100;
-  color: black;
+  color: #008274;
   width: 100%;
-  background-image: linear-gradient(#e8f2ed, #8ac8e2)
 }
 
 .navlinks a, .navlinks a:visited {
   display: inline-block;
-  color: #262c2d;
+  color: #008274;
   text-align: center;
   background: none;
   padding: 0 20px;
@@ -73,15 +69,9 @@ body {
   font-weight: bold
 }
 
-.navlinks a:hover {
-  background: none;
-  color: #35CDD1;
-}
-
-.mobile-navlinks, .hamburger {
+.mobile-navlinks, .mobile-navlinks:visited, .hamburger {
   display: none;
-  background-image: linear-gradient(#e8f2ed, #8ac8e2)
-
+  color: #008274;
 }
 
 .top:visited {
@@ -110,23 +100,11 @@ i {
   color: #35CDD1;
 }
 
-/* Home */
-
-.home_content {
-  background-image: linear-gradient(#e8f2ed, #8ac8e2);
-  color: black;
-  width: 80%;
-  margin: 8%;
-  text-align: center;
-  font-size: 25px;
-  padding: 2%
-}
-
 /* contact page */
 
 .contactcontainer {
   text-align: center;
-  color: #35CDD1;
+  color: #f7f7f0;
   width: 50%;
   z-index: 1;
   margin: 90px auto 100px auto;
@@ -135,7 +113,7 @@ i {
   font-family: 'Slabo 27', serif;
   font-size: 1.4em;
   font-weight: bold;
-  background: black;
+  background: #008274;
 }
 
 .formcaption {
@@ -150,8 +128,9 @@ label {
 }
 
 input {
-  background: white;
-  border: none;
+  background: #f7f7f0;
+  color: #008274;
+  font-size: 15px
 }
 
 textarea {
@@ -161,8 +140,8 @@ textarea {
   border: none;
   border-radius: 10px;
   margin: 10px auto 10px auto;
-  background: white;
-  color: black;
+  background: #f7f7f0;
+  color: #008274;
   font-size: 1.1em
 }
 
@@ -173,61 +152,72 @@ textarea {
 button#submit {
   font-size: 23px;
   font-family: 'Monoton', serif;
-  color: black;
+  color: #008274;
   border: none;
   border-radius: 10px;
   margin: 10px auto
 }
 
 button#submit:hover {
-  color: #2ec4f2
+  background-color:  #89BA16
 }
 
 form {
   z-index: 5
 }
 
-/* Bio page */
+/* Bio/Home page */
 
 .profile-img {
   height: 600px;
   width: 500px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(28, 95, 94, 0.15), rgba(28, 95, 94, 0.6)), url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
+  background-image: url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .nepal-img {
-  height: 600px;
-  width: 500px;
+  width: 100%;
+  height: 450px;
   margin: 0 auto;
+  margin-top: 100px;
   background-image: linear-gradient(rgba(28, 95, 94, 0.15), rgba(28, 95, 94, 0.6)), url("../src/components/img/attachments/Nepal 2009 504.JPG");
   background-position: center;
   background-size: cover;
-  border-radius: 5px
+  border-radius: 5px;
+  padding: 20px
+}
+
+.nepal-quote {
+  width: 300px;
+  padding: 15px;
+  font-size: 4em;
+  color: #f7f7f0;
+  font-family: 'Alfa Slab One', serif;
+  border: 3px solid #f7f7f0;
+  margin-top: 140px
 }
 
 .bio_content {
-  background-image: linear-gradient(#e8f2ed, #8ac8e2);
-  color: black;
+  color: #008274;
   width: 80%;
   margin: 5%;
   text-align: center;
   font-size: 25px;
-  padding: 5%
+  padding: 5%;
 }
 
 /* Pubs page */
 
 .cardborder {
-  background-image: linear-gradient(#e8f2ed, #8ac8e2);
   font-family: 'Slabo 27px', serif;
   font-size: 20px;
   padding: 20px;
   margin: 10px 20%;
-  border-radius: 5px
+  border-radius: 5px;
+  border: 1px solid #008274
 }
 
 
@@ -292,9 +282,20 @@ form {
     margin: 0 50px
   }
 
-  .profile-img, .nepal-img {
+  .profile-img {
     width: 300px;
     height: 330px
+  }
+
+  .nepal-quote {
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    width: 30%
+  }
+
+  .nepal-img {
+    padding: 50px 0
   }
 
 }

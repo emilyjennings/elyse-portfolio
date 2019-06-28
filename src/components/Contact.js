@@ -19,14 +19,14 @@ export default class Contact extends Component {
   changeHeader = () => {
     $('.navtitle').text("Contact Me")
     $('.contactlink').css({
-      'background': 'black',
-      'color': '#8ac8e2',
+      'background': '#008274',
+      'color': '#f7f7f0',
       'padding': '0 5px'
     })
     $('.homelink, .researchlink, .biolink, .gallerylink').css({
       'background': 'none',
-      'color': 'black',
-      'padding': '0'
+      'color': '#008274',
+      'padding': '0 5px'
     })
   }
 

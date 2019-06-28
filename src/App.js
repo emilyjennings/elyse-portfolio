@@ -6,7 +6,6 @@ import './App.css';
 
 import Home from './containers/Home'
 import Header from './containers/Header'
-import Bio from './components/Bio'
 import Contact from './components/Contact'
 import Research from './components/Research'
 
@@ -41,7 +40,6 @@ class App extends Component {
          <Header />
 
           <Route exact path="/" component={Home} />
-          <Route exact path="/bio" component={Bio} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/research" component={Research} />
 

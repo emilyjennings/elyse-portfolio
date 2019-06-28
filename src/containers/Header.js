@@ -31,16 +31,27 @@ export default class Header extends Component {
     });
   }
 
+  scrollShift = () => {
+    $(window).scroll(function(){
+      $(".navbar, hr").css("opacity", 1 - $(window).scrollTop() / 150);
+      if ($(window).scrollTop() > 400) {
+        $(".navbar, hr").css("display", "none");
+      } else if ($(window).scrollTop() < 400) {
+        $(".navbar, hr").css("display", "block");      }
+    });
+  }
+
 
   componentDidMount(){
     {this.hamMenu()}
+    {this.scrollShift()}
   }
 
   render() {
     return (
         <div className="headercontainer">
-          <Nav />
           <div className="navtitle"></div>
+          <Nav />
 
         </div>
     );
