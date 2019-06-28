@@ -84,6 +84,7 @@ class Research extends Component {
   render() {
     return (
       <div className="researchpage">
+        <div className="research-text">Elyse has spent more than a decade studying family events and family dynamics across the life course and around the globe. Much of her time has been spent on understanding marriage, childbearing, and marital dissolution in South Asia. Her current work in aging in South Africa largely focuses on how marriage, widowhood, and divorce can impact one's receipt of social support, as well as their health outcomes.</div>
         {this.displayCards()}
       </div>
     );

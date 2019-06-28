@@ -12,7 +12,7 @@ body {
 .navtitle {
   text-align: center;
   color: #008274;
-  margin: 100px 14%;
+  margin: 80px 14%;
   font-size: 4.7em;
   font-family: 'Slabo 27px', serif;
   height: 100px;
@@ -38,8 +38,8 @@ body {
 }
 
 .top:hover {
-  background-color: #35CDD1;
-  color: #C4EFDA;
+  color: #f7f7f0;
+  background-color: #89BA16;
   opacity: .5;
 }
 
@@ -48,13 +48,14 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0;
-  right: 0;
   line-height: 2.4em;
   padding: 1px;
   opacity: 1;
   z-index: 100;
   color: #008274;
   width: 100%;
+  background: #f7f7f0;
+  text-align: center;
 }
 
 .navlinks a, .navlinks a:visited {
@@ -214,7 +215,7 @@ form {
   margin: 0 10%
 }
 
-.bio_content {
+.bio_content, .research-text {
   color: #008274;
   width: 80%;
   margin: 5%;
