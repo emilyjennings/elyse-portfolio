@@ -56,7 +56,10 @@ render() {
         She is currently a Research Scientist at the Harvard Center for Population and Development Studies at the T.H. Chan School of Public Health.
       </div>
       <div className="nepal-img">
-        <div className="nepal-quote">"A quote of some kind"</div>
+        <div className="quote-box">
+          <div className="nepal-quote">"The primary challenge facing our species is the reproduction of our species itself." </div>
+          <div className="boris">-Boris Johnson</div>
+        </div>
       </div>
 
       <button className="top">

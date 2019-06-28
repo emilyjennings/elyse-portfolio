@@ -50,8 +50,9 @@ export default class Header extends Component {
   render() {
     return (
         <div className="headercontainer">
-          <div className="navtitle"></div>
           <Nav />
+          <div className="navtitle"></div>
+
 
         </div>
     );

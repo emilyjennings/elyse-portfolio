@@ -187,17 +187,31 @@ form {
   background-position: center;
   background-size: cover;
   border-radius: 5px;
-  padding: 20px
+  padding-top: 20px
 }
 
 .nepal-quote {
-  width: 300px;
-  padding: 15px;
-  font-size: 4em;
+  padding: 10px;
+  font-size: 3em;
   color: #f7f7f0;
   font-family: 'Alfa Slab One', serif;
+  overflow: hidden;
+}
+
+.boris {
+  padding: 15px;
+  font-size: 1.6em;
+  color: #f7f7f0;
+  font-family: 'Alfa Slab One', serif;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.quote-box {
+  margin-top: 100px;
   border: 3px solid #f7f7f0;
-  margin-top: 140px
+  width: 80%;
+  margin: 0 10%
 }
 
 .bio_content {
@@ -234,7 +248,10 @@ form {
 
   .mobile-navlinks {
     display: block;
-    border: 3px solid black;
+  }
+
+  .cv {
+    color: #008274
   }
 
   .mobile-navlinks a, .mobile-navlinks a:visited {
@@ -253,20 +270,18 @@ form {
     right: 0;
     border-radius: 5px 5px 5px 5px;
     margin: 20px;
-    border: 1px solid black;
+    border: 1px solid #f7f7f0;
     line-height: 2.5em;
     font-family: monospace;
     font-size: 20px;
     padding: 1px 13px;
     display: block;
-    color: black;
+    background-color: #f7f7f0;
     z-index: 100;
-    background-image: linear-gradient(#e8f2ed, #8ac8e2)
   }
 
   button.hamburger:hover {
-    background: black;
-    color: #e8f2ed
+    color: #89BA16
   }
 
   .cross {
@@ -274,11 +289,10 @@ form {
     top: 0;
     right: 0;
     margin: 20px;
+    color: #89BA16
   }
 
   .gallerylink, .homelink, .biolink, .contactlink, .researchlink {
-    color: black;
-    background: #e8f2ed;
     margin: 0 50px
   }
 
@@ -288,10 +302,14 @@ form {
   }
 
   .nepal-quote {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     margin: auto;
-    width: 30%
+  }
+
+  .boris {
+    font-size: 1.2em;
+    text-align: center;
   }
 
   .nepal-img {
