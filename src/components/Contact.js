@@ -80,7 +80,13 @@ export default class Contact extends Component {
           </form>
         </div>
 
-        <div className="space"></div>
+        <div className="nepal-img-2">
+          <div className="quote-box">
+            <div className="nepal-quote">"If we knew what it was we were doing, it would not be called research, would it?" </div>
+            <div className="boris">-Albert Einstein</div>
+          </div>
+        </div>
+
       </div>
     );
   };

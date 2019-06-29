@@ -80,7 +80,6 @@ class Research extends Component {
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="cardstuff">
-        <div className="card_title">{card.name}</div>
         <a href={card.link}>
           <div className="cardborder" id={card.name}>
             <div className="title">{card.title}</div>
