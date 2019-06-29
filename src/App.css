@@ -225,10 +225,9 @@ form {
 .bio_content, .research-text {
   color: #008274;
   width: 80%;
-  margin: 1%;
+  margin: 10%;
   text-align: center;
   font-size: 25px;
-  padding: 5%;
 }
 
 /* Pubs page */
@@ -331,7 +330,7 @@ form {
 
   .profile-img {
     width: 300px;
-    height: 330px
+    height: 330px;
   }
 
   .nepal-quote {
