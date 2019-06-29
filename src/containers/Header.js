@@ -53,6 +53,9 @@ export default class Header extends Component {
           <Nav />
           <div className="navtitle"></div>
 
+          <button className="top">
+            Up
+          </button>
 
         </div>
     );

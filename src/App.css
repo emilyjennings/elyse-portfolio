@@ -7,6 +7,15 @@ body {
   font-family: 'Slabo 27px', serif;
 }
 
+a {
+  color: #68c949;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #008274
+}
+
 /* Header */
 
 .navtitle {
@@ -38,8 +47,8 @@ body {
 }
 
 .top:hover {
-  color: #f7f7f0;
-  background-color: #89BA16;
+  color: #008274;
+  background-color: #68c949;
   opacity: .5;
 }
 
@@ -176,7 +185,6 @@ form {
   background-image: url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 5px;
 }
 
 .nepal-img {
@@ -184,16 +192,16 @@ form {
   height: 450px;
   margin: 0 auto;
   margin-top: 100px;
-  background-image: linear-gradient(rgba(28, 95, 94, 0.15), rgba(28, 95, 94, 0.6)), url("../src/components/img/attachments/Nepal 2009 504.JPG");
+  background-image: linear-gradient(rgba(28, 95, 94, 0.4), rgba(28, 95, 94, 0.4)), url("../src/components/img/attachments/Nepal 2009 504.JPG");
   background-position: center;
   background-size: cover;
   border-radius: 5px;
-  padding-top: 20px
+  padding-top: 30px
 }
 
 .nepal-quote {
   padding: 10px;
-  font-size: 3em;
+  font-size: 2em;
   color: #f7f7f0;
   font-family: 'Alfa Slab One', serif;
   overflow: hidden;
@@ -209,16 +217,15 @@ form {
 }
 
 .quote-box {
-  margin-top: 100px;
   border: 3px solid #f7f7f0;
-  width: 80%;
-  margin: 0 10%
+  width: 50%;
+  margin: 0 45% 0 5%;
 }
 
 .bio_content, .research-text {
   color: #008274;
   width: 80%;
-  margin: 5%;
+  margin: 1%;
   text-align: center;
   font-size: 25px;
   padding: 5%;
@@ -230,11 +237,36 @@ form {
   font-family: 'Slabo 27px', serif;
   font-size: 20px;
   padding: 20px;
-  margin: 10px 20%;
+  margin: 20px 20%;
   border-radius: 5px;
-  border: 1px solid #008274
+  border: 1px solid #008274;
+  background: #aee69c;
+  box-shadow: 2px 5px
 }
 
+.researchpage a {
+  color: #008274
+}
+
+.researchpage a:hover {
+  color: #f7f7f0
+}
+
+.cardborder:hover {
+  background-color: #008274
+}
+
+.nepal-img-2 {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(28, 95, 94, 0.4), rgba(28, 95, 94, 0.4)), url("../src/components/img/attachments/Nepal 2009 638.JPG");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  padding-top: 30px
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -315,6 +347,10 @@ form {
 
   .nepal-img {
     padding: 50px 0
+  }
+
+  .quote-box {
+    margin: auto;
   }
 
 }
