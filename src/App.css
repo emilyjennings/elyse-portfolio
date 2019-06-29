@@ -243,6 +243,14 @@ form {
   box-shadow: 2px 5px
 }
 
+.card_title {
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 20% 0 20%;
+  color: #008274
+}
+
 .researchpage a {
   color: #008274
 }
