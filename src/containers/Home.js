@@ -3,6 +3,7 @@ import $ from 'jquery'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from './Header'
+import Footer from './Footer'
 
 
 export default class Home extends Component {
@@ -19,6 +20,11 @@ changeHeader = () => {
     'color': '#008274',
     'padding': '0 5px'
   })
+}
+
+changeFooter = () => {
+  $('.quote').text('"In theory there is no difference between theory and practice. In practice there is."')
+  $('.author').text('-Yogi Berra')
 }
 
 
@@ -50,6 +56,7 @@ scrollTop = () => {
 componentDidMount(){
   {this.changeHeader()}
   {this.scrollTop()}
+  {this.changeFooter()}
 }
 
 render() {
@@ -61,12 +68,8 @@ render() {
         She earned her Ph.D. in Sociology at the University of Michigan in 2013, where she was a predoctoral trainee at the <a href="https://www.psc.isr.umich.edu/">Population Studies Center</a>. She then completed a postdoctoral fellowship at the <a href="https://www.cpc.unc.edu/">Carolina Population Center</a> at the University of North Carolina.
         She is currently a Research Scientist at the <a href="https://www.hsph.harvard.edu/population-development/">Harvard Center for Population and Development Studies</a> at the T.H. Chan School of Public Health.
       </div>
-      <div className="nepal-img">
-        <div className="quote-box">
-          <div className="nepal-quote">"The PhD system is the real root of the evil of academic snobbery." </div>
-          <div className="boris">-Freeman Dyson</div>
-        </div>
-      </div>
+
+      <Footer />
 
     </div>
   );

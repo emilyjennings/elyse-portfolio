@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
+import Footer from '../containers/Footer'
+
 const encode = (data) => {
   return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -30,8 +32,14 @@ export default class Contact extends Component {
     })
   }
 
+  changeFooter = () => {
+    $('.quote').text('"In theory there is no difference between theory and practice. In practice there is."')
+    $('.author').text('-Yogi Berra')
+  }
+
   componentDidMount(){
     {this.changeHeader()}
+    {this.changeFooter()}
   }
 
   // Code for the contact form submission given by Netlify documentation
@@ -80,12 +88,7 @@ export default class Contact extends Component {
           </form>
         </div>
 
-        <div className="nepal-img-2">
-          <div className="quote-box">
-            <div className="nepal-quote">"If we knew what it was we were doing, it would not be called research, would it?" </div>
-            <div className="boris">-Albert Einstein</div>
-          </div>
-        </div>
+        <Footer />
 
       </div>
     );

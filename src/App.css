@@ -187,7 +187,7 @@ form {
   background-size: cover;
 }
 
-.nepal-img {
+.footer-img {
   width: 100%;
   height: 450px;
   margin: 0 auto;
@@ -199,7 +199,7 @@ form {
   padding-top: 30px
 }
 
-.nepal-quote {
+.quote {
   padding: 10px;
   font-size: 2em;
   color: #f7f7f0;
@@ -207,7 +207,7 @@ form {
   overflow: hidden;
 }
 
-.boris {
+.author {
   padding: 15px;
   font-size: 1.6em;
   color: #f7f7f0;
@@ -263,7 +263,7 @@ form {
   background-color: #008274
 }
 
-.nepal-img-2 {
+.footer-img {
   width: 100%;
   height: 450px;
   margin: 0 auto;
@@ -272,7 +272,7 @@ form {
   background-position: center;
   background-size: cover;
   border-radius: 5px;
-  padding-top: 30px
+  padding-top: 30px;
 }
 
 

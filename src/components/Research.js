@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 
 import Fade from 'react-reveal/Fade';
+import Footer from '../containers/Footer'
 
 
 class Research extends Component {
@@ -77,14 +78,21 @@ class Research extends Component {
     })
   }
 
+  changeFooter = () => {
+    $('.quote').text('"If we knew what it was we were doing, it would not be called research, would it?"')
+    $('.author').text('-Albert Einstein')
+  }
+
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="cardstuff">
-        <a href={card.link}>
-          <div className="cardborder" id={card.name}>
-            <div className="title">{card.title}</div>
-          </div>
-        </a>
+        <Fade>
+          <a href={card.link}>
+            <div className="cardborder" id={card.name}>
+              <div className="title">{card.title}</div>
+            </div>
+          </a>
+        </Fade>
       </div>
     )
   }
@@ -96,18 +104,14 @@ class Research extends Component {
         <div className="research-text">Elyse has spent more than a decade studying family events and family dynamics across the life course and around the globe. Much of her time has been spent on understanding marriage, childbearing, and marital dissolution in South Asia. Her current work in aging in South Africa largely focuses on how marriage, widowhood, and divorce can impact one's receipt of social support, as well as their health outcomes.</div>
         {this.displayCards()}
         <div className="space"></div>
-        <div className="nepal-img-2">
-          <div className="quote-box">
-            <div className="nepal-quote">"If we knew what it was we were doing, it would not be called research, would it?" </div>
-            <div className="boris">-Albert Einstein</div>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   };
 
   componentDidMount(){
     {this.changeHeader()}
+    {this.changeFooter()}
   }
 
 }
