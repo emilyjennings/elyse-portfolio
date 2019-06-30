@@ -25,6 +25,9 @@ changeHeader = () => {
 changeFooter = () => {
   $('.quote').text('"In theory there is no difference between theory and practice. In practice there is."')
   $('.author').text('-Yogi Berra')
+  $('.footer-img').css(
+    'background-image', 'url("../src/components/img/attachments/Nepal 2009 638.JPG")'
+  )
 }
 
 
