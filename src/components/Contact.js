@@ -35,6 +35,9 @@ export default class Contact extends Component {
   changeFooter = () => {
     $('.quote').text('"Research is formalized curiosity. It is poking and prying with a purpose."')
     $('.author').text('-Zora Neale Hurston')
+    $('.footer-img').css({
+      "background-image": "url('../src/components/img/attachments/Nepal 2009 504.JPG')"
+    })
   }
 
   componentDidMount(){
