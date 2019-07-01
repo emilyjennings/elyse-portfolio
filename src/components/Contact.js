@@ -33,8 +33,8 @@ export default class Contact extends Component {
   }
 
   changeFooter = () => {
-    $('.quote').text('"In theory there is no difference between theory and practice. In practice there is."')
-    $('.author').text('-Yogi Berra')
+    $('.quote').text('"Research is formalized curiosity. It is poking and prying with a purpose."')
+    $('.author').text('-Zora Neale Hurston')
   }
 
   componentDidMount(){
