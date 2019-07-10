@@ -3,6 +3,7 @@ import $ from 'jquery'
 
 export default class Footer extends Component {
 
+
 render() {
   return (
     <div className="footer-img">

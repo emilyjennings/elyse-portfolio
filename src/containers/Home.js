@@ -25,6 +25,9 @@ changeHeader = () => {
 changeFooter = () => {
   $('.quote').text('"In theory there is no difference between theory and practice. In practice there is."')
   $('.author').text('-Yogi Berra')
+  $('.footer-img').css({
+    'background': `url('./Nepal 2009 504.JPG)`
+  })
 }
 
 
@@ -42,13 +45,6 @@ scrollTop = () => {
     };
   });
 }
-
-//cool scroll effect for the images
-  parallaxBackground = () => {
-    $(window).scroll(function(){
-      $(".footer-img").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 10) + "%");
-    });
-  }
 
 componentDidMount(){
   {this.changeHeader()}
