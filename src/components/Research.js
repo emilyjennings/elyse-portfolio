@@ -83,6 +83,12 @@ class Research extends Component {
     $('.author').text('-Albert Einstein')
   }
 
+  parallaxFooter = () => {
+    $(window).scroll(function(){
+      $(".footer-img").css("background-position", "0% "  + (($(window).scrollTop() / 15)) + "%");
+    });
+  }
+
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="cardstuff">
@@ -113,6 +119,7 @@ class Research extends Component {
   componentDidMount(){
     {this.changeHeader()}
     {this.changeFooter()}
+    {this.parallaxFooter()}
   }
 
 }

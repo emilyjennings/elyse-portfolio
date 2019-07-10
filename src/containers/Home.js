@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from './Header'
 import Footer from './Footer'
 
+import mountain from '../components/img/attachments/mountain.JPG'
+
 
 export default class Home extends Component {
 
@@ -25,10 +27,22 @@ changeHeader = () => {
 changeFooter = () => {
   $('.quote').text('"In theory there is no difference between theory and practice. In practice there is."')
   $('.author').text('-Yogi Berra')
-  $('.footer-img').css({
-    'background': `url('./Nepal 2009 504.JPG)`
-  })
+  // $('.footer-img').css({'background-image': mountain})
 }
+
+//cool scroll effect for the images
+  parallaxProfile = () => {
+    $(window).scroll(function(){
+      $(".profile-img").css("background-position", "0% "  + (($(window).scrollTop() / 25) + 20) + "%");
+    });
+  }
+
+  parallaxFooter = () => {
+    $(window).scroll(function(){
+      $(".footer-img").css("background-position", "0% "  + (($(window).scrollTop() / 15) + 20) + "%");
+    });
+  }
+
 
 
 scrollTop = () => {
@@ -50,6 +64,8 @@ componentDidMount(){
   {this.changeHeader()}
   {this.scrollTop()}
   {this.changeFooter()}
+  {this.parallaxProfile()}
+  {this.parallaxFooter()}
 }
 
 render() {

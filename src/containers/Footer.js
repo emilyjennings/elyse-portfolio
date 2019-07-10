@@ -3,6 +3,12 @@ import $ from 'jquery'
 
 export default class Footer extends Component {
 
+//cool scroll effect for the images
+  parallaxBackground = () => {
+    $(window).scroll(function(){
+      $(".footer-img").css("background-position", "50% "  + (($(window).scrollTop() / 20)) + "%");
+    });
+  }
 
 render() {
   return (
