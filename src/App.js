@@ -43,6 +43,7 @@ class App extends Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/research" component={Research} />
 
+          <div className="emily"><a href="https://www.this-is-emily.com">Designed and Created by Emily</a></div>
 
         </div>
       </BrowserRouter>

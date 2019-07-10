@@ -211,6 +211,18 @@ form {
   margin: 0 45% 0 5%;
 }
 
+.emily {
+  position: fixed;
+  bottom: 3px;
+  right: 7px
+}
+
+.emily a {
+  color: #f7f7f0;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 12px
+}
+
 .bio_content, .research-text {
   color: #008274;
   width: 80%;
@@ -260,7 +272,6 @@ form {
   margin-top: 100px;
   background-image: linear-gradient(rgba(28, 95, 94, 0.4), rgba(28, 95, 94, 0.4)), url("../src/components/img/attachments/Nepal 2009 638.JPG");
   /* background-size: cover; */
-  border-radius: 5px;
   padding-top: 30px;
   background-position: 0%;
 }
