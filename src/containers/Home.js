@@ -46,10 +46,7 @@ scrollTop = () => {
 //cool scroll effect for the images
   parallaxBackground = () => {
     $(window).scroll(function(){
-      $(".profile-img").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 10) + "%");
-      // $("#abroad, #college, #teaching, .story, #coding").css("background-position", "50% "  + (($(window).scrollTop() / 20)) + "%");
-      // $("#jeju").css("background-position", "0% "  + (($(window).scrollTop() / 60)) + "%");
-      // $("#between, #dc").css("background-position", "50% "  + (($(window).scrollTop() / 60)) + "%");
+      $(".footer-img").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 10) + "%");
     });
   }
 

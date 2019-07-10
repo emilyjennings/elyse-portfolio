@@ -243,12 +243,13 @@ form {
   box-shadow: 2px 5px
 }
 
-.card_title {
+.subtitle {
   font-family: 'Slabo 27px', serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   padding: 20px 20% 0 20%;
-  color: #008274
+  color: #008274;
+  text-align: center;
 }
 
 .researchpage a {
