@@ -276,6 +276,10 @@ form {
   background-position: 0%;
 }
 
+.space {
+  height: 200px
+}
+
 
 @media only screen and (max-width: 600px) {
   .navtitle {
