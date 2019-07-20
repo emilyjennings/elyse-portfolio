@@ -37,9 +37,17 @@ export default class Contact extends Component {
     $('.author').text('-Zora Neale Hurston')
   }
 
+  parallaxFooter = () => {
+    $(window).scroll(function(){
+      $(".footer-img-village").css("background-position", "0% "  + (($(window).scrollTop() / 13)) + "%");
+    });
+  }
+
+
   componentDidMount(){
     {this.changeHeader()}
     {this.changeFooter()}
+    {this.parallaxFooter()}
   }
 
   // Code for the contact form submission given by Netlify documentation
@@ -88,9 +96,15 @@ export default class Contact extends Component {
           </form>
         </div>
 
-        <div className="space"></space>
+        <div className="space"></div>
 
-        <Footer />
+        <div className="footer-img-village">
+          <div className="quote-box">
+            <div className="quote"></div>
+            <div className="author"></div>
+          </div>
+        </div>
+
 
       </div>
     );

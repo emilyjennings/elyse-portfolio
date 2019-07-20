@@ -31,17 +31,17 @@ changeFooter = () => {
 }
 
 //cool scroll effect for the images
-  parallaxProfile = () => {
-    $(window).scroll(function(){
-      $(".profile-img").css("background-position", "0% "  + (($(window).scrollTop() / 25) + 20) + "%");
-    });
-  }
+parallaxProfile = () => {
+  $(window).scroll(function(){
+    $(".profile-img").css("background-position", "0% "  + (($(window).scrollTop() / 25) + 20) + "%");
+  });
+}
 
-  parallaxFooter = () => {
-    $(window).scroll(function(){
-      $(".footer-img").css("background-position", "0% "  + (($(window).scrollTop() / 15) + 20) + "%");
-    });
-  }
+parallaxFooter = () => {
+  $(window).scroll(function(){
+    $(".footer-img-mountain").css("background-position", "0% "  + (($(window).scrollTop() / 25)) + "%");
+  });
+}
 
 
 
@@ -78,7 +78,12 @@ render() {
         She is currently a Research Scientist at the <a href="https://www.hsph.harvard.edu/population-development/">Harvard Center for Population and Development Studies</a> at the T.H. Chan School of Public Health.
       </div>
 
-      <Footer />
+      <div className="footer-img-mountain">
+        <div className="quote-box">
+          <div className="quote"></div>
+          <div className="author"></div>
+        </div>
+      </div>
 
     </div>
   );
