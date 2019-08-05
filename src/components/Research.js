@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
+import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Footer from '../containers/Footer'
 
@@ -91,15 +92,15 @@ class Research extends Component {
 
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
+              <Fade left>
       <div className="cardstuff">
-        <Fade>
           <a href={card.link}>
             <div className="cardborder" id={card.name}>
               <div className="title">{card.title}</div>
             </div>
           </a>
-        </Fade>
       </div>
+              </Fade>
     )
   }
 
@@ -107,7 +108,9 @@ class Research extends Component {
   render() {
     return (
       <div className="researchpage">
-        <div className="research-text">Elyse has spent more than a decade studying family events and family dynamics across the life course and around the globe. Much of her time has been spent on understanding marriage, childbearing, and marital dissolution in South Asia. Her current work in aging in South Africa largely focuses on how marriage, widowhood, and divorce can impact one's receipt of social support, as well as their health outcomes.</div>
+        <Zoom clear>
+          <div className="research-text">Elyse has spent more than a decade studying family events and family dynamics across the life course and around the globe. Much of her time has been spent on understanding marriage, childbearing, and marital dissolution in South Asia. Her current work in aging in South Africa largely focuses on how marriage, widowhood, and divorce can impact one's receipt of social support, as well as their health outcomes.</div>
+        </Zoom>
         <div className="subtitle">Selected Publications</div>
         {this.displayCards()}
         <div className="space"></div>

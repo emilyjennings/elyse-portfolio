@@ -1,10 +1,10 @@
 . {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Libre Calson Text', serif;
 }
 
 body {
-  background: #f7f7f0;
-  font-family: 'Slabo 27px', serif;
+  background: #f7faf8;
+  font-family: 'Libre Calson Text', serif;
 }
 
 a {
@@ -20,35 +20,34 @@ a:hover {
 
 .navtitle {
   text-align: center;
-  color: #008274;
+  color: #1b1c1b;
   margin: 80px 14%;
   font-size: 4.7em;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Libre Calson Text', serif;
   height: 100px;
   font-weight: bold;
   padding-bottom: 20px;
-  border-bottom: 2px solid #008274
+  border-bottom: 2px solid #1b1c1b
 }
 
 .top {
   padding: 10px;
   display: block;
   margin: 30px auto;
-  font-size: 1em;
+  font-size: .8em;
   opacity: 0;
   font-weight: bold;
-  color: #f7f7f0;
+  color: #1b1c1b;
   border-radius: 80px;
   position: fixed;
   bottom: 40px;
   right: 20px;
   z-index: 100;
-  background: #008274;
 }
 
 .top:hover {
-  color: #008274;
-  background-color: #68c949;
+  color: #f7faf8;
+  background: #008274;
   opacity: .5;
 }
 
@@ -74,7 +73,7 @@ a:hover {
   background: none;
   padding: 0 20px;
   margin: 0;
-  font-size: 15px;
+  font-size: 19px;
   text-decoration: none;
   font-weight: bold
 }
@@ -169,7 +168,7 @@ button#submit {
 }
 
 button#submit:hover {
-  background-color:  #89BA16
+  background-color: #1b1c1b
 }
 
 form {
@@ -224,7 +223,7 @@ form {
 }
 
 .bio_content, .research-text {
-  color: #008274;
+  color: #1b1c1b;
   width: 80%;
   margin: 10%;
   text-align: center;

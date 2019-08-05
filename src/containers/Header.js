@@ -54,7 +54,7 @@ export default class Header extends Component {
           <div className="navtitle"></div>
 
           <button className="top">
-            Up
+            top
           </button>
 
         </div>

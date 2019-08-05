@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
+import Zoom from 'react-reveal/Zoom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import Header from './Header'
 import Footer from './Footer'
 
@@ -72,11 +74,13 @@ render() {
   return (
     <div className="">
       <div className="profile-img"></div>
-      <div className="bio_content">
-        Elyse is a family demographer, trained in sociology, whose research focuses on understanding the causes and consequences of family events.
-        She earned her Ph.D. in Sociology at the University of Michigan in 2013, where she was a predoctoral trainee at the <a href="https://www.psc.isr.umich.edu/">Population Studies Center</a>. She then completed a postdoctoral fellowship at the <a href="https://www.cpc.unc.edu/">Carolina Population Center</a> at the University of North Carolina.
-        She is currently a Research Scientist at the <a href="https://www.hsph.harvard.edu/population-development/">Harvard Center for Population and Development Studies</a> at the T.H. Chan School of Public Health.
-      </div>
+      <Zoom clear>
+        <div className="bio_content">
+          Elyse is a family demographer, trained in sociology, whose research focuses on understanding the causes and consequences of family events.
+          She earned her Ph.D. in Sociology at the University of Michigan in 2013, where she was a predoctoral trainee at the <a href="https://www.psc.isr.umich.edu/">Population Studies Center</a>. She then completed a postdoctoral fellowship at the <a href="https://www.cpc.unc.edu/">Carolina Population Center</a> at the University of North Carolina.
+          She is currently a Research Scientist at the <a href="https://www.hsph.harvard.edu/population-development/">Harvard Center for Population and Development Studies</a> at the T.H. Chan School of Public Health.
+        </div>
+      </Zoom>
 
       <div className="footer-img-mountain">
         <div className="quote-box">
