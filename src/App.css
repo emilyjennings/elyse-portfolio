@@ -64,6 +64,7 @@ a:hover {
   width: 100%;
   background: #f7f7f0;
   text-align: center;
+  font-family: 'Slabo 27px'
 }
 
 .navlinks a, .navlinks a:visited {
