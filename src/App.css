@@ -62,7 +62,7 @@ a:hover {
   z-index: 100;
   color: #008274;
   width: 100%;
-  background: #f7f7f0;
+  background: #f7faf8;
   text-align: center;
   font-family: 'Slabo 27px'
 }
@@ -86,28 +86,6 @@ a:hover {
 
 .top:visited {
   color: #35CDD1
-}
-
-/* footer */
-.socialmedia {
-  width: 100%;
-  margin: 0 auto 10px auto;
-  text-align: center;
-  z-index: 50
-}
-
-.socialmedia a {
-  padding: 10px;
-  font-size: 30px;
-  color: #35CDD1;
-}
-
-.socialmedia i:hover {
-  color: #C4EFDA
-}
-
-i {
-  color: #35CDD1;
 }
 
 /* contact page */
@@ -185,7 +163,9 @@ form {
   background-image: url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 9px
+  border-radius: 9px;
+  /* display: inline-block;
+  float: left; */
 }
 
 .quote {
@@ -225,11 +205,23 @@ form {
 
 .bio_content, .research-text {
   color: #1b1c1b;
-  width: 80%;
-  margin: 10%;
+  width: 50%;
+  margin: 10% 25%;
   text-align: center;
   font-size: 25px;
 }
+
+/* .bio_content {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  text-align: left;
+}
+
+.profile-container {
+  display: block;
+  clear: both;
+} */
 
 /* Pubs page */
 
@@ -239,9 +231,8 @@ form {
   padding: 20px;
   margin: 20px 20%;
   border-radius: 5px;
-  border: 1px solid #008274;
-  background: #aee69c;
-  box-shadow: 2px 5px
+  background: #f7faf8;
+  color: #1b1c1b
 }
 
 .subtitle {
@@ -262,7 +253,7 @@ form {
 }
 
 .cardborder:hover {
-  background-color: #008274
+  background-color: #008274;
 }
 
 .footer-img, .footer-img-mountain, .footer-img-village {
@@ -288,7 +279,7 @@ form {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .navtitle {
     padding: 20px;
     font-size: 40px;

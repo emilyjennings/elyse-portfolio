@@ -26,6 +26,16 @@ class App extends Component {
     })
   }
 
+  emily = () => {
+    var scrollTop = $(window).scrollTop()
+    if (scrollTop > 80) {
+      $('.emily').animate({
+        opacity: '1',
+      }, 1000)
+    };
+
+  }
+
 
   componentDidMount(){
     {this.changeHeader()}
