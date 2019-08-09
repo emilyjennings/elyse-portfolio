@@ -3,6 +3,8 @@ import $ from 'jquery'
 
 import Footer from '../containers/Footer'
 
+import village from './img/attachments/village.JPG'
+
 const encode = (data) => {
   return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -30,6 +32,10 @@ export default class Contact extends Component {
       'color': '#008274',
       'padding': '0 5px'
     })
+    $('.footer-img').css(
+      'background-image', 'linear-gradient(rgba(28, 95, 94, 0.4), rgba(28, 95, 94, 0.4)), url(' + village + ')'
+    )
+
   }
 
   changeFooter = () => {
@@ -39,7 +45,7 @@ export default class Contact extends Component {
 
   parallaxFooter = () => {
     $(window).scroll(function(){
-      $(".footer-img-village").css("background-position", "0% "  + (($(window).scrollTop() / 13)) + "%");
+      $(".footer-img").css("background-position", "0% "  + (($(window).scrollTop() / 13)) + "%");
     });
   }
 
@@ -98,12 +104,7 @@ export default class Contact extends Component {
 
         <div className="space"></div>
 
-        <div className="footer-img-village">
-          <div className="quote-box">
-            <div className="quote"></div>
-            <div className="author"></div>
-          </div>
-        </div>
+        <Footer />
 
 
       </div>

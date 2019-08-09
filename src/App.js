@@ -11,10 +11,10 @@ import Research from './components/Research'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faGlobeAsia, faTimes } from '@fortawesome/free-solid-svg-icons'
+// import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faChevronUp, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faLinkedin, faTimes)
+library.add(faChevronUp, faTimes)
 
 class App extends Component {
 
@@ -26,21 +26,9 @@ class App extends Component {
     })
   }
 
-  emily = () => {
-    var scrollTop = $(window).scrollTop()
-    if (scrollTop > 80) {
-      $('.emily').animate({
-        opacity: '1',
-      }, 1000)
-    };
-
-  }
-
-
   componentDidMount(){
     {this.changeHeader()}
   }
-
 
 
   render() {
@@ -53,10 +41,9 @@ class App extends Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/research" component={Research} />
 
-          <div className="emily"><a href="https://www.this-is-emily.com">Designed and Created by Emily</a></div>
-
         </div>
       </BrowserRouter>
+
     );
   }
 

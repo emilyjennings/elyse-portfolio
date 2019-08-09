@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: #008274
+  color: #f7faf8;
 }
 
 /* Header */
@@ -51,7 +51,7 @@ a:hover {
   opacity: .5;
 }
 
- .navlinks {
+.navlinks {
   display: inline-block;
   overflow: hidden;
   position: fixed;
@@ -194,13 +194,15 @@ form {
 .emily {
   position: fixed;
   bottom: 3px;
-  right: 7px
+  right: 7px;
+  color: #f7faf8;
+  opacity: 0
 }
 
 .emily a {
-  color: #f7f7f0;
+  color: #f7faf8;
   font-family: 'Alfa Slab One', serif;
-  font-size: 12px
+  font-size: 12px;
 }
 
 .bio_content, .research-text {
@@ -245,7 +247,7 @@ form {
 }
 
 .researchpage a {
-  color: #008274
+  color: #f7faf8;
 }
 
 .researchpage a:hover {
@@ -256,7 +258,7 @@ form {
   background-color: #008274;
 }
 
-.footer-img, .footer-img-mountain, .footer-img-village {
+.footer-img {
   width: 100%;
   height: 450px;
   margin: 0 auto;
@@ -264,14 +266,6 @@ form {
   background-image: linear-gradient(rgba(28, 95, 94, 0.4), rgba(28, 95, 94, 0.4)), url("../src/components/img/attachments/Nepal 2009 638.JPG");
   padding-top: 30px;
   background-position: 0%;
-}
-
-.footer-img-mountain {
-  background-image: linear-gradient(rgba(28, 95, 94, 0.4), rgba(28, 95, 94, 0.4)), url("../src/components/img/attachments/mountain.JPG");
-}
-
-.footer-img-village {
-  background-image: linear-gradient(rgba(28, 95, 94, 0.4), rgba(28, 95, 94, 0.4)), url("../src/components/img/attachments/Nepal 2009 639.JPG");
 }
 
 .space {
@@ -298,7 +292,7 @@ form {
   }
 
   .mobile-navlinks a, .mobile-navlinks a:visited {
-    color: black;
+    color: #008274;
     text-decoration: none;
     padding: 5px;
     text-align: center;
@@ -313,13 +307,13 @@ form {
     right: 0;
     border-radius: 5px 5px 5px 5px;
     margin: 20px;
-    border: 1px solid #f7f7f0;
+    border: 1px solid #f7faf8;
     line-height: 2.5em;
     font-family: monospace;
     font-size: 20px;
     padding: 1px 13px;
     display: block;
-    background-color: #f7f7f0;
+    background: #f7faf8;
     z-index: 100;
   }
 
@@ -327,12 +321,16 @@ form {
     color: #89BA16
   }
 
-  .cross {
-    position: absolute;
+  .cross, .cross a {
+    position: fixed;
     top: 0;
     right: 0;
     margin: 20px;
-    color: #89BA16
+    color: #008274;
+    display: block;
+    opacity: 1;
+    z-index: 1;
+
   }
 
   .gallerylink, .homelink, .biolink, .contactlink, .researchlink {
@@ -361,6 +359,12 @@ form {
 
   .quote-box {
     margin: auto;
+  }
+
+  .bio_content, .research-text {
+    font-size: 22px;
+    width: 70%;
+    margin: 15%
   }
 
 }
