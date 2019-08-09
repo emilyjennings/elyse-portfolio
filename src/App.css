@@ -21,7 +21,7 @@ a:hover {
 .navtitle {
   text-align: center;
   color: #1b1c1b;
-  margin: 80px 14%;
+  margin: 90px 14%;
   font-size: 4.7em;
   font-family: 'Libre Calson Text', serif;
   height: 100px;
@@ -56,7 +56,7 @@ a:hover {
   overflow: hidden;
   position: fixed;
   top: 0;
-  line-height: 2.4em;
+  line-height: 2.2em;
   padding: 1px;
   opacity: 1;
   z-index: 100;
@@ -64,7 +64,8 @@ a:hover {
   width: 100%;
   background: #f7faf8;
   text-align: center;
-  font-family: 'Slabo 27px'
+  font-family: 'Slabo 27px';
+  font-size: 13px
 }
 
 .navlinks a, .navlinks a:visited {
@@ -154,19 +155,7 @@ form {
   z-index: 5
 }
 
-/* Bio/Home page */
-
-.profile-img {
-  height: 500px;
-  width: 500px;
-  margin: 0 auto;
-  background-image: url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
-  background-position: center;
-  background-size: cover;
-  border-radius: 9px;
-  /* display: inline-block;
-  float: left; */
-}
+/* footer */
 
 .quote {
   padding: 10px;
@@ -196,7 +185,6 @@ form {
   bottom: 3px;
   right: 7px;
   color: #f7faf8;
-  opacity: 0
 }
 
 .emily a {
@@ -205,25 +193,40 @@ form {
   font-size: 12px;
 }
 
-.bio_content, .research-text {
-  color: #1b1c1b;
-  width: 50%;
-  margin: 10% 25%;
-  text-align: center;
+/* Bio Page */
+
+.bio_content {
   font-size: 25px;
+  color: #1b1c1b;
+  margin-left: 8%;
+  margin-right: 2%
 }
 
-/* .bio_content {
+.profile-img {
+  height: 400px;
+  width: 300px;
+  margin-right: 8%;
+  margin-left: 2%;
+  background-image: url("../src/components/img/attachments/Elyse Jennings_IMG_0445.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 9px;
   display: inline-block;
   float: right;
-  width: 40%;
-  text-align: left;
 }
 
 .profile-container {
   display: block;
   clear: both;
-} */
+  width: 100%;
+  overflow: hidden;
+}
+
+.space-home {
+  width: 100%;
+  display: block;
+  height: 1px
+}
 
 /* Pubs page */
 
@@ -244,6 +247,14 @@ form {
   padding: 20px 20% 0 20%;
   color: #008274;
   text-align: center;
+}
+
+.research-text {
+  color: #1b1c1b;
+  width: 50%;
+  margin: 10% 25%;
+  text-align: center;
+  font-size: 25px;
 }
 
 .researchpage a {
@@ -338,8 +349,11 @@ form {
   }
 
   .profile-img {
-    width: 300px;
-    height: 330px;
+    width: 70%;
+    margin: 0 15%;
+    height: 350px;
+    display: block;
+    float: none;
   }
 
   .quote {

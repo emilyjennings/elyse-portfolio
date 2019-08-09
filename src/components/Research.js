@@ -81,8 +81,8 @@ class Research extends Component {
   }
 
   changeFooter = () => {
-    $('.quote').text('"If we knew what it was we were doing, it would not be called research, would it?"')
-    $('.author').text('-Albert Einstein')
+    $('.quote').text('"Creativity requires input, and that\'s what research is. You\'re gathering material with which to build."')
+    $('.author').text('-Gene Luen Yang')
   }
 
   parallaxFooter = () => {
@@ -114,7 +114,7 @@ class Research extends Component {
         </Fade>
         <div className="subtitle">Selected Publications</div>
         {this.displayCards()}
-        <div className="space"></div>
+        <div className="space-home"></div>
         <Footer />
       </div>
     );

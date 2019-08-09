@@ -10,8 +10,6 @@ import Contact from './components/Contact'
 import Research from './components/Research'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faChevronUp, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faChevronUp, faTimes)

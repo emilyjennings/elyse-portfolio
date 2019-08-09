@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-// import Fade from 'react-reveal/Fade';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import Header from './Header'
 import Footer from './Footer'
 
 import mountain from '../components/img/attachments/mountain.JPG'
@@ -83,6 +79,7 @@ render() {
           She is currently a Research Scientist at the <a href="https://www.hsph.harvard.edu/population-development/">Harvard Center for Population and Development Studies</a> at the T.H. Chan School of Public Health.
         </div>
       </div>
+      <div className="space-home"></div>
 
       <Footer />
 
