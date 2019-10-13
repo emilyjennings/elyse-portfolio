@@ -45,10 +45,6 @@ componentDidMount = () => {
 render() {
   return (
     <div className="footer-img">
-      <div className="quote-box">
-        <div className="quote"></div>
-        <div className="author"></div>
-      </div>
       <div className="emily"><a href="https://www.this-is-emily.com">Designed and Created by Emily</a></div>
       <button className="top">
         <FontAwesomeIcon icon={['fas', 'chevron-up']} />
