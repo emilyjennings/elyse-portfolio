@@ -5,22 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class Footer extends Component {
 
-//cool scroll effect for the images
-  // parallaxBackground = () => {
-  //   $(window).scroll(function(){
-  //     $(".footer-img").css("background-position", "50% "  + (($(window).scrollTop() / 20)) + "%");
-  //   });
-  // }
-
-  // emily = () => {
-  //   var scrollTop = $(window).scrollTop()
-  //   if (scrollTop > 10) {
-  //     $('.emily').animate({
-  //       'opacity': '1'
-  //     }, 2000)
-  //   };
-  // }
-
   scrollTop = () => {
     $(".top").click(function(event){
       $(window).scrollTop(0);

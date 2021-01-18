@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-// import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-// import Slide from 'react-reveal/Slide';
 import Footer from '../containers/Footer'
 
 
@@ -61,6 +59,13 @@ class Research extends Component {
           name: 'attitudes',
           image: '',
           title: 'Jennings, Elyse A., William G. Axinn, and Dirgha J. Ghimire. 2012. “The Effect of Parent Attitudes on Marriage Timing of Sons in Nepal.” American Sociological Review, 77(6):923-945.',
+        },
+        7: {
+          index: 7,
+          link: "https://www.sciencedirect.com/science/article/pii/S2352827320303037",
+          name: 'depressive',
+          image: '',
+          title: 'Jennings, Elyse A., Margaret Ralston, and Enid Schatz. Forthcoming. Support in Times of Need: How Depressive Symptoms Can Impact Receipt of Social Support among Aging Adults in South Africa. SSM – Population Health, 12.',
         },
       }
     }
