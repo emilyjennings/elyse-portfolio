@@ -24,14 +24,11 @@ class App extends Component {
     })
   }
 
-  componentDidMount(){
-    {this.changeHeader()}
-  }
-
 
   render() {
     return (
       <BrowserRouter>
+        {this.changeHeader()}
         <div className="app">
          <Header />
 

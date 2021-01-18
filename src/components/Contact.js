@@ -49,13 +49,6 @@ export default class Contact extends Component {
     });
   }
 
-
-  componentDidMount(){
-    {this.changeHeader()}
-    {this.changeFooter()}
-    {this.parallaxFooter()}
-  }
-
   // Code for the contact form submission given by Netlify documentation
   handleSubmit = e => {
     fetch("/", {
@@ -76,6 +69,9 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="contactpage">
+      {this.changeHeader()}
+      {this.changeFooter()}
+      {this.parallaxFooter()}
         <div className="contactcontainer">
           <div className="formcaption">I'll be in touch soon.</div>
           <form name="contact" onSubmit={this.handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
