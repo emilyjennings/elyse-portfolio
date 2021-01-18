@@ -42,14 +42,11 @@ export default class Header extends Component {
   }
 
 
-  componentDidMount(){
-    {this.hamMenu()}
-    {this.scrollShift()}
-  }
-
   render() {
     return (
         <div className="headercontainer">
+          {this.hamMenu()}
+          {this.scrollShift()}
           <Nav />
           <div className="navtitle"></div>
 

@@ -21,14 +21,10 @@ export default class Footer extends Component {
   }
 
 
-componentDidMount = () => {
-  {this.scrollTop()}
-}
-
-
 render() {
   return (
     <div className="footer-img">
+      {this.scrollTop()}
       <div className="emily"><a href="https://www.this-is-emily.com">Designed and Created by Emily</a></div>
       <button className="top">
         <FontAwesomeIcon icon={['fas', 'chevron-up']} />

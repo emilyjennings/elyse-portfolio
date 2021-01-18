@@ -60,18 +60,15 @@ scrollTop = () => {
   });
 }
 
-componentDidMount(){
-  {this.changeHeader()}
-  {this.scrollTop()}
-  {this.changeFooter()}
-  {this.parallaxProfile()}
-  {this.parallaxFooter()}
-}
-
 render() {
   return (
     <div className="">
       <div className="profile-container">
+        {this.changeHeader()}
+        {this.scrollTop()}
+        {this.changeFooter()}
+        {this.parallaxProfile()}
+        {this.parallaxFooter()}
         <div className="profile-img"></div>
         <div className="bio_content">
           Elyse is a family demographer, trained in sociology, whose research focuses on understanding the causes and consequences of family events.
